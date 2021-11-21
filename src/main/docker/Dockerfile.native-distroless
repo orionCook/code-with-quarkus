@@ -3,19 +3,19 @@
 #
 # Before building the container image run:
 #
-# ./mvnw package -Pnative
+# ./gradlew build -Dquarkus.package.type=native
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native-distroless -t quarkus/code-with-quarkus .
+# docker build -f src/main/docker/Dockerfile.native-distroless -t quarkus/road.runner .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/code-with-quarkus
+# docker run -i --rm -p 8080:8080 quarkus/road.runner
 #
 ###
 FROM quay.io/quarkus/quarkus-distroless-image:1.0
-COPY target/*-runner /application
+COPY build/*-runner /application
 
 EXPOSE 8080
 USER nonroot
