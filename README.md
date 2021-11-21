@@ -33,12 +33,12 @@ The application, packaged as an _über-jar_, is now runnable using `java -jar bu
 
 ## Creating a native executable
 
-You can create a native executable using: 
+You can create a native executable using:
 ```shell script
 ./gradlew build -Dquarkus.package.type=native
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
 ```shell script
 ./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
 ```
@@ -50,3 +50,14 @@ If you want to learn more about building native executables, please consult http
 ## Related Guides
 
 - AWS Lambda ([guide](https://quarkus.io/guides/amazon-lambda)): Write AWS Lambda functions
+
+## Provided Code
+
+### Amazon Lambda Integration example
+
+This example contains a Quarkus Greeting Lambda ready for Amazon.
+
+[Related guide section...](https://quarkus.io/guides/amazon-lambda)
+
+> :warning: **INCOMPATIBLE WITH DEV MODE**: Amazon Lambda Binding is not compatible with dev mode yet!
+

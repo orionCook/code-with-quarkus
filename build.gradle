@@ -16,9 +16,10 @@ dependencies {
     implementation 'io.quarkus:quarkus-amazon-ssm'
     implementation 'io.quarkus:quarkus-amazon-s3'
     testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
 }
 
-group 'com.ooo'
+group 'com.ooo.lambda'
 version '1.0.0-SNAPSHOT'
 
 java {
