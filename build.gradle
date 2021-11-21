@@ -19,7 +19,7 @@ dependencies {
     testImplementation 'io.rest-assured:rest-assured'
 }
 
-group 'com.ooo.lambda'
+group 'com.ooo'
 version '1.0.0-SNAPSHOT'
 
 java {
