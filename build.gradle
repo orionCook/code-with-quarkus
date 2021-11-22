@@ -15,6 +15,11 @@ dependencies {
     implementation 'io.quarkus:quarkus-amazon-dynamodb'
     implementation 'io.quarkus:quarkus-amazon-ssm'
     implementation 'io.quarkus:quarkus-amazon-s3'
+    implementation 'io.quarkus:quarkus-amazon-ssm'
+    implementation 'io.quarkus:quarkus-apache-httpclient'
+    implementation 'software.amazon.awssdk:url-connection-client'
+    testImplementation 'org.testcontainers:localstack:1.16.2'
+    testImplementation "org.testcontainers:junit-jupiter:1.16.2"
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
 }
